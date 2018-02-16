@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eloyyyyyyy.fragmentbasedatosjson.FragmentBD">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Nombre Contacto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Num Telefono"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnAnadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etNombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"
+            android:text="Añadir Contacto" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnAnadir"
+            android:text="Borrar Contacto" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnBorrar"
+            android:text="Modificar Contacto" />
+
+        <Button
+            android:id="@+id/btnListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnModificar"
+            android:layout_centerHorizontal="true"
+            android:text="Listar Contactos" />
+
+        <TextView
+            android:id="@+id/tvListar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etNombre"
+            android:layout_alignStart="@+id/etNombre"
+            android:layout_below="@+id/btnListar"
+            android:layout_marginTop="23dp"
+            android:textColor="@android:color/background_dark" />
+
+    </RelativeLayout>
+
+</FrameLayout>
